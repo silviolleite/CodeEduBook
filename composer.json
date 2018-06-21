@@ -16,4 +16,6 @@
             "CodeEduBook\\": ""
         }
     }
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

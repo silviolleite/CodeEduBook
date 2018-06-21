@@ -1,0 +1,15 @@
+{
+    "name": "silviolleite/codeedubook",
+    "description": "",
+    "authors": [
+        {
+            "name": "Silvio Luis Leite",
+            "email": "silviolleite@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CodeEduBook\\": ""
+        }
+    }
+}

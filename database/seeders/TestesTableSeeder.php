@@ -14,7 +14,7 @@ class TestesTableSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-        $this->command->info("Seeder Executada");
+        $this->command->info("Seeder Executada teste de submodule");
         // $this->call("OthersTableSeeder");
     }
 }

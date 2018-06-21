@@ -15,7 +15,7 @@
         "psr-4": {
             "CodeEduBook\\": ""
         }
-    }
+    },
   "minimum-stability": "dev",
   "prefer-stable": true
 }

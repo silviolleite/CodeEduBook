@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTestesTable extends Migration
+class AddSoftDeleteToBooks extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateTestesTable extends Migration
      */
     public function up()
     {
-        Schema::create('testes', function (Blueprint $table) {
-            $table->increments('id');
-
-            $table->timestamps();
+        Schema::table('books', function (Blueprint $table) {
+            $table->softDeletes();
         });
     }
 
@@ -27,6 +25,8 @@ class CreateTestesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('testes');
+        Schema::table('books', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
     }
 }

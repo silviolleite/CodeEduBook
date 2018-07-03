@@ -2,8 +2,6 @@
 
 namespace CodeEduBook\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use CodeEduBook\Models\Category;
 use CodeEduBook\Http\Requests\CategoryRequest;
 use CodeEduBook\Repositories\CategoryRepository;
 use Illuminate\Http\Request;
@@ -25,6 +23,7 @@ class CategoriesController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)

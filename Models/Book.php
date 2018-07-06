@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Book whereUpdatedAt($value)
  * @mixin \Eloquent
  * @property int $user_id
- * @property-read \App\Models\User $user
+ * @property-read \AuthUser\Models\User $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Book whereUserId($value)
  */
 class Book extends Model implements TableInterface
@@ -43,7 +43,7 @@ class Book extends Model implements TableInterface
     ];
 
     public function user(){
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo('AuthUser\Models\User');
     }
 
     public function categories(){

@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => 'auth'], function (){
+Route::group(['middleware' => ['auth', config('authuser.middleware.isVerified')]], function (){
     Route::resource('categories', 'CategoriesController', ['except' => 'show']);
     Route::resource('books', 'BooksController', ['except' => 'show']);
     Route::group(['prefix' => 'trashed', 'as' => 'trashed.'], function (){

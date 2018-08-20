@@ -4,7 +4,6 @@ namespace CodeEduBook\Repositories;
 
 use App\Criteria\CriteriaTrashedTrait;
 use App\Repositories\RepositoryRestoreTrait;
-use CodeEduBook\Repositories\CategoryRepository;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
 use CodeEduBook\Models\Category;

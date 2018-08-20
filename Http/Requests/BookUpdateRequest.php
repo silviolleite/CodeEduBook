@@ -29,7 +29,7 @@ class BookUpdateRequest extends BookRequest
             return false;
 
         $book = $this->repository->find($id);
-        return $this->user()->id == $book->user_id;
+        return \Gate::allows('update-book', $book);
     }
 
 }
